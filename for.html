@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link type="text" rel="stylesheet" href="style.css">
+<style>
+h2{background-color: #eee; font-size: 45px;color: green; font-family: Arial, Helvetica, sans-serif; border-radius: 18px; padding-left: 15px; margin-right: 25px; margin-left: 25px; text-align: center;}
+
+</style>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<h1>Estudando menu e for in</h1>
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+<script>
+  // Exemplo 02 serve para menu Nav
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 1;
+var len = cars.length;
+var text = "";
+for (; i< len; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+</script>
+ <p id="for3"></p>
+<script>
+  //Exemplo 03 Serve p/Menu com Javascript!
+    var cars = ["BMW", "Volvo", "Saab", "Ford", "Honda Civick"];
+    var i = 0;
+    var length = cars.length;
+    let texto = "";
+    for (; i< length; ) {
+    texto += cars[i] + "<br>";
+      i++;
+    }
+    document.getElementById("for3").innerHTML = texto;
+    </script>
+
+
+
+  <p id="dext">Click this button p/ mudar de cor com Javascript</p>
+<button id="myFunction"  onclick="myFunction()">Click Me!</butto>
+<script>
+function myFunction() {
+ var button = document.getElementById("dext");
+  button.style.fontSize = "35px"; 
+  button.style.color = "red"; 
+  button.style.padding = "10px";
+}
+</script>
+
+
+
+</body>
+</html>
+
+
