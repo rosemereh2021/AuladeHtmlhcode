@@ -1,0 +1,217 @@
+    <!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else if Array</title>
+   <style>
+body{
+background-color: rgb(134, 186, 202);
+}
+   </style>
+<style>
+.blue{color: blue;}
+</style>
+    </head>
+<body>
+ <script src="elseif.js"></script>
+    <script src="altera.js"></script>
+    <p>Link Menu Interno<a href="pesquisa.html" rel="previw" target="_blank"> &nbsp;ACESSE AS PESQUISAS  INTERNAS</a></p>
+
+    <h2>Estudando Javascript</h2>
+ <h1></h1>
+<h1 id="title">Javascript no cabeçalho</h1>
+<p id="class"></p>
+<button id="btn-set">Set</button>
+<button id="btn-remove">Remove</button>
+<button id="btn-get">Get</button>
+<script>
+document.getElementById("btn-set").addEventListener("click", function(){
+document.getElementById("title").setAttribute("class", "blue")
+
+})
+
+document.getElementById("btn-remove").addEventListener("click", function(){
+   document.getElementById("title").removeAttribute("class")
+   })
+
+   document.getElementById("btn-get").addEventListener("click", function(){
+  let value = document.getElementById("title").getAttribute("class")
+document.getElementById("class").innerHTML = value
+   })
+
+</script>
+        <p>Curso de C++</p>
+<p>Curso de Java</p>
+        <p>curso de Fotografia</p>
+<p>Curso de Marketing<p>
+        <p>Curso de Música</p>
+  <p>Curso de Croche</p>      
+        </p>Curso de Pedreiro</p>
+</p>Curso Maquiagem</p>
+        <p>Cuso de CSS</p>
+
+    <P id="demo">Um Paragrafo</P>
+    <button type= "button" onclick="myFunction()">Experimente</button>
+        <button onclick="this.innerHTML=Date()">Horario</button>
+
+           <p id="p1">Jesus</p>
+    <p id="psg">Gloria a DEUS!</p>
+    <div id="cont"></div>
+
+<script>
+let nome = window.prompt(`Qual é o seu Nome`);
+document.write(`Olá <strong>${nome}</strong>! Seu Nome tem ${nome.length} letras.<br/>`);
+document.write(`Seu Nome em MAIÚSCULA é ${nome.toUpperCase()}`);
+document.write(`Seu Nome em minuscula é! ${nome.toLocaleLowerCase()}`);
+//manipulando os elementos dom com javascript
+//modificando conteudo html via javascript DOM
+</script>
+<div id="nsg">Comprar pela net!</div>
+<script>
+var d1 = window.document.getElementById("nsg")
+d1.style.background = "green";
+d1.innerText = "A Solução dos problemas está em CRISTO!";
+        //d1.innerHTML = "A Solução dos problemas está em CRISTO SEMPRE!";
+
+        var p1 = window.document.getElementById("psg")
+        p1.style.background = "red";
+     //   p1.innerText = "A Solução dos problemas está em ter Muita Fé em  CRISTO!"    
+</script>
+
+<script>
+    var d2 = document.getElementById("novadiv");
+d1.innerText = "MUDANDO O TEXTOOO";
+</script>
+<div id="novadiv">novo texto 
+</div>
+<p>Estudar IF /ELSE</p>
+
+   <div id="futebol-brasileiro">
+<div class="times">Flamengo</div>
+<div class="times">Bota Fogo</div>
+<div class="times">São Paulo</div>
+    </div>
+
+    <div id="futebol-europeu">
+<div class="times">Real Madrid</div>
+<div class="times">Barcelona</div>
+<div class="times">Juventos</div>
+    </div>
+
+
+<P>ESTUDAR ARRAY FORECHE</P>
+
+<input type="text" id="fnovo"><button id="btnAdd">Adicionar</button><br><br>
+
+<input type="text" id="fnum"><button id="btnDestaque">Destaque</button><br><br>
+
+ <!--
+<ul id="listaElementos">
+</ul>
+ <script>
+ function inicia(){
+    document.getElementById("btnAdd").addEventListener("click",function(){
+var lista = document.getElementById("listaElementos");
+var texto = document.getElementById("fnovo");
+var li = document.createElement("li");
+li.textContent = texto.value;
+lista.appendChild(li);
+texto.value = "";
+texto.focus();
+
+   // });
+
+   // }
+
+window.addEventListener("load",inicia);
+</script>
+-->
+
+<script>
+function inicia() {
+document.getElementById("btnDestaque").addEventListener("click", function() {
+var num = document.getElementById( "fnum" ).value;
+var p = document.getElementsByTagName( "p" );
+
+for( var i=0; i<p.length;i++ ) {
+p[i].removeAttribute( "style" );
+
+}
+
+var at = document.createAttribute( "style" );
+at.value = "color: #f00; font-size: 30px";
+p[num].setAttributeNode(at);
+
+
+});
+
+}
+
+window.addEventListener("load",inicia);
+</script>
+
+<script>
+ function inicia(){
+    document.getElementById("btnAdd").addEventListener("click",function(){
+var lista = document.getElementById("listaElementos");
+var texto = document.getElementById("fnovo");
+var li = document.createElement("li");
+li.textContent = texto.value;
+lista.appendChild(li);
+texto.value = "";
+texto.focus();
+
+    });
+
+    }
+
+window.addEventListener("load",inicia);
+</script>
+
+<div id="conteudo"></div>
+<script>
+    //adcionando conteudo abaixo do body, tag (p) div e muito mais.
+let p = document.createElement("p")
+p.innerHTML = "Ola Mundo Deus é Fiel!!!"
+document.getElementById("conteudo").appendChild(p)
+</script>
+
+  <P>FLAYER.COM &reg;</P>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
